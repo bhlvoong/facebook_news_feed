@@ -1,0 +1,15 @@
+{
+    "post": {
+        "name": "Mark Zuckerberg",
+        "location": {
+            "city": "San Francisco",
+            "state": "CA"
+        },
+        "profileImageName": "zuckprofile",
+        "statusText": "By giving people the power to share, we're making the world more transparent.",
+        "statusImageName": "zuckdog",
+        "numLikes": 150,
+        "numComments": 300,
+        "infoKey": "some other information"
+    }
+}
