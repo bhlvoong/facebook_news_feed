@@ -24,9 +24,8 @@ class CustomTabBarController: UITabBarController {
         secondNavigationController.tabBarItem.image = UIImage(named: "requests_icon")
         
         let messengerVC = UIViewController()
-        messengerVC.navigationItem.title = "SOME TITLE"
         let messengerNavigationController = UINavigationController(rootViewController: messengerVC)
-        messengerNavigationController.title = "Messenger ABC"
+        messengerNavigationController.title = "Messenger"
         messengerNavigationController.tabBarItem.image = UIImage(named: "messenger_icon")
         
         let notificationsNavController = UINavigationController(rootViewController: UIViewController())
@@ -39,11 +38,11 @@ class CustomTabBarController: UITabBarController {
         
         viewControllers = [navigationController, secondNavigationController, messengerNavigationController, notificationsNavController, moreNavController]
         
-        tabBar.translucent = false
+        tabBar.isTranslucent = false
         
         let topBorder = CALayer()
-        topBorder.frame = CGRectMake(0, 0, 1000, 0.5)
-        topBorder.backgroundColor = UIColor.rgb(229, green: 231, blue: 235).CGColor
+        topBorder.frame = CGRect(x: 0, y: 0, width: 1000, height: 0.5)
+        topBorder.backgroundColor = UIColor.rgb(229, green: 231, blue: 235).cgColor
         
         tabBar.layer.addSublayer(topBorder)
         tabBar.clipsToBounds = true
